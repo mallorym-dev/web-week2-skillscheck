@@ -155,7 +155,9 @@ let total = myNumbers.reduce(function(acc, val) {
 let myNumbersIndex = [];
 myNumbers.forEach(function(el,i,arr) {
 	myNumbersIndex.push(el[i]);
+	return myNumbersIndex;
 })
+
 
 
 
@@ -190,11 +192,15 @@ people.filter(function(el,i,arr) {
 			return el;
 		}
 	}
-	return enemies
+	return enemies;
 })
+
 
 //////////////////PROBLEM 20////////////////////
 
 // Using the people array above, let's get a total of the awesomeLevel from all the people. Call the new array 'totallyAwesome'. Use .reduce()
 
-// Code Here
+let totallyAwesome = people.reduce(function(acc,val) {
+	return acc + val;
+})
+
