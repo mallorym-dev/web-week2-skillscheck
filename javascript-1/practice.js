@@ -53,7 +53,7 @@ function oddChecker(num) {
 // Create a function called 'iLove' that takes in two parameters, name which will be a string  and love which will be a string of something you love. Have the function take the two parameters and retrun a string that says "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Bryan loves skateboarding"
 
 function iLove(name, love) {
-	return `${name} + loves + ${love}`;
+	return '' + name + ' loves ' + love + '';
 }
 
 
@@ -111,8 +111,8 @@ function bigOrSmall(arr) {
 // Create a function called 'arrayReverser' that takes in one parameter, arr. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array in reverse and add each item to the new reversed array. Finally, return the new reversed array
 
 function arrayReverser(arr) {
-	var reversed = [];
-	for (let i = arr.length - 1; i > 0; i--) {
+	let reversed = [];
+	for (let i = arr.length - 1; i >= 0; i--) {
 		reversed.push(arr[i]);
 	}
 	return reversed;
@@ -153,10 +153,11 @@ let total = myNumbers.reduce(function(acc, val) {
 // Last, lets use .forEach to find the index of each item in the array. First, create an empty array called myNumbersIndex. Next, using forEach, push each items index from the myNumbers array to the myNumbersIndex array
 
 let myNumbersIndex = [];
-myNumbers.forEach(function(el, i, arr) {
+myNumbers.forEach(function(el,i,arr) {
 	myNumbersIndex.push(el[i]);
-	return myNumbersIndex;
 })
+
+
 
 //////////////////PROBLEM 18////////////////////
 

@@ -1,5 +1,86 @@
-.top {
+#top {
+    position: relative;
     height:30px;
-    width:10px;
+    width:100%;
+    background-color: grey;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.second {
+    height: 150px;
+    width: 300vw;
+    background: black;
+    color: yellow;
+    font-size: 50px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.center {
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    margin: 35px;
+}
+.square2 {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    margin: 35px;
+    justify-content: center;
+}
+
+.square3 {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    margin: 35px;
+}
+
+.center2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.square4 {
+    height: 150px;
+    width: 250px;
+    background-color:orange;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.square5 {
+    height: 150px;
+    width: 250px;
+    background-color:orange;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: row;
+}
+
+.words {
+    font-size: 10px;
+}
+
+.photo {
+    image: url(https://www.google.com/search?q=elephant&rlz=1C1CHBD_enUS863US863&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjBpeDUqZfkAhWPoJ4KHb-KC1UQ_AUIESgB&biw=1536&bih=754#imgrc=kxcPvxodqe4uWM:)
+}
+
+.below {
+    height: 10vh;
+    width: 300vw;
     background: purple;
+    margin-top: 35px; 
 }
